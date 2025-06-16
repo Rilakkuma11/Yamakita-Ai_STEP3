@@ -185,12 +185,7 @@
               <input type="submit" value="送信">
             </div>
           </form>
-        </section>
-      </main>
+       </section>
     </div>
-    <footer id="footer">
-      © 2025 世界一甘いお店
-    </footer>
-  </div>
-</body>
+  </body>
 </html>
