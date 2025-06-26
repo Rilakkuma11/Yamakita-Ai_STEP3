@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>世界一甘いお店</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 24px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #d81b60;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 24px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 4px solid #000; 
+      
+      background: #fafafa;
+    }
+
+    th, td {
+      border: 1px solid #000; 
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select {
+      width: 40ch;
+      padding: 6px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+
+    textarea {
+      width: 30ch;
+      height: calc(1.4em * 5);
+      padding: 6px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      background: #fff;
+      resize: vertical;
+    }
+
+    .radio-inline label {
+      margin-right: 20px;
+    }
+
+    .btn-area {
+      margin-top: 16px;
+      text-align: left;
+    }
+
+    .btn-area input[type="submit"] {
+      padding: 8px 20px;
+      background: #1e88e5;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .btn-area input[type="submit"]:hover {
+      background: #1565c0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>世界一甘いお店</h2>
+
+    <ul>
+      <li>トップ</li>
+      <li>新着情報</li>
+      <li>おすすめスイーツ</li>
+      <li>お問い合わせ</li>
+    </ul>
+
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <th>お名前</th>
+          <td><input type="text" name="name" size="40"></td>
+        </tr>
+        <tr>
+          <th>近くのお店</th>
+          <td>
+            <select name="store">
+              <option value="">選択してください</option>
+              <option>北海道・東北</option>
+              <option>関東</option>
+              <option>中部</option>
+              <option>関西</option>
+              <option>中国</option>
+              <option>四国</option>
+              <option>九州・沖縄</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>電話</th>
+          <td><input type="text" name="tel" size="40"></td>
+        </tr>
+        <tr>
+          <th>電話番号</th>
+          <td><input type="text" name="phone" size="40"></td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td><input type="email" name="email" size="40"></td>
+        </tr>
+        <tr>
+          <th>お問い合わせ種別</th>
+          <td class="radio-inline">
+            <label><input type="radio" name="kind" value="product"> 商品について</label>
+            <label><input type="radio" name="kind" value="staff"> 従業員について</label>
+          </td>
+        </tr>
+        <tr>
+          <th>お問い合わせ内容</th>
+          <td>
+            <textarea name="message" cols="30" rows="5" placeholder="詳細を入力してください"></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <div class="btn-area">
+        <input type="submit" value="送信">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
