@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background: #FFEB3B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 1.5rem;
+  color: #c45a00;
+}
+
+.layout {
+  display: flex;
+  gap: 0;
+}
+aside {
+  flex: 1;
+  background: #98FB98;
+  padding: 0.8em;
+}
+main {
+  flex: 3;
+  background: #F5F5DC;
+  padding: 1.5em;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 0.4em 0 0.4em 1em;
+  color: blue;
+  text-decoration: underline;
+  position: relative;
+}
+.sidebar-nav a + a {
+  margin-top: 0.4em;
+}
+.sidebar-nav a::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+.table-container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.table-container table {
+  border: 4px double #000;
+  border-collapse: collapse;
+}
+.table-container th,
+.table-container td {
+  border: 4px double #000;
+  padding: 8px;
+  vertical-align: middle;
+}
+.table-container th {
+  text-align: center;
+}
+.table-container td {
+  text-align: left;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  white-space: nowrap;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  margin: 0;
+}
+
+.table-container input[type="text"],
+.table-container input[type="tel"],
+.table-container input[type="email"],
+.table-container select {
+  width: 40ch;
+  padding: 5px;
+  font-size: 1rem;
+}
+.table-container textarea {
+  width: 60ch;
+  height: 6em;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.button-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+.button-area button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+
+footer {
+  height: 60px;
+  background: #CCCCCC;
+}
