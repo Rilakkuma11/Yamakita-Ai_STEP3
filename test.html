@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせフォーム</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <h2 class="title">世界一甘いお店</h2>
+
+    <nav class="nav-links">
+      <a href="#">・トップ</a>
+      <a href="#">・新着情報</a>
+      <a href="#">・おすすめスイーツ</a>
+      <a href="#">・お問い合わせ</a>
+    </nav>
+
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <th>お名前</th>
+          <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+          <th>お近くのお店</th>
+          <td>
+            <select name="store">
+              <option>北海道・東北</option>
+              <option>関東</option>
+              <option>中部</option>
+              <option>関西</option>
+              <option>中国・四国</option>
+              <option>九州・沖縄</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>電話</th>
+          <td><input type="text" name="phone"></td>
+        </tr>
+        <tr>
+          <th>電話番号</th>
+          <td><input type="tel" name="tel"></td>
+        </tr>
+        <tr>
+          <th>メールアドレス</th>
+          <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+          <th>お問い合わせ種別</th>
+          <td class="radio-group">
+            <label>
+              <input type="radio" name="type" value="product" checked>
+              商品について
+            </label>
+            <label>
+              <input type="radio" name="type" value="staff">
+              従業員について
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <th class="center">お問い合わせ内容</th>
+          <td>
+            <textarea name="detail" placeholder="詳細を入力してください"></textarea>
+          </td>
+        </tr>
+      </table>
+
+      <div class="submit-button">
+        <button type="submit">送信</button>
+      </div>
+    </form>
+
+  </div>
+
+</body>
+</html>
