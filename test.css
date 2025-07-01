@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+.wrapper {
+  margin-left: 11em; 
+}
+
+.wrapper .title {
+  margin: 0 0 0.5em;
+  color: #c45a00;
+  text-align: left;
+}
+
+.wrapper .nav-links {
+  padding-left: 1ch; 
+  margin: 0 0 1.2em;
+}
+.wrapper .nav-links a {
+  display: block;
+  color: blue;
+  text-decoration: underline;
+  margin-bottom: 0.4em;
+}
+
+.wrapper table {
+  border: 4px double black;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+.wrapper th,
+.wrapper td {
+  border: 4px double black;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.wrapper th.center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.wrapper input[type="text"],
+.wrapper input[type="tel"],
+.wrapper input[type="email"],
+.wrapper select {
+  width: 40ch;      
+  padding: 4px;
+  font-size: 1rem;
+}
+.wrapper textarea {
+  width: 30ch;      
+  height: 5em;      
+  padding: 4px;
+  font-size: 1rem;
+}
+
+.wrapper .radio-group label {
+  margin-right: 2em;
+}
+
+.wrapper .submit-button {
+  margin: 1.2em 0 0;
+}
